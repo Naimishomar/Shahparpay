@@ -65,7 +65,8 @@ const Login = () => {
     };
 
     return (
-        <div className="w-full h-screen overflow-hidden grid grid-cols-1 lg:grid-cols-2 bg-[#F6F7FA]">
+        <div className="relative w-full h-screen overflow-hidden grid grid-cols-1 lg:grid-cols-2 bg-[#fff]">
+            <div className="absolute bottom-0 left-0 w-96 h-96 rounded-2xl blur-3xl bg-gradient-to-r from-blue-200 via-blue-200 to-blue-200"></div>
             <div className="flex flex-col justify-center items-center px-8 lg:px-16 relative h-full">
                 <div className="w-full max-w-md flex flex-col items-center pt-8">
                     <div className="mb-5 px-6 py-2">
@@ -152,7 +153,8 @@ const Login = () => {
                 </div>
             </div>
 
-            <div className="hidden lg:flex relative bg-white items-center justify-center overflow-hidden">
+            <div className="hidden lg:flex relative bg-white items-center justify-center overflow-hidden relative">
+                <div className="absolute top-0 right-0 w-96 h-96 rounded-2xl blur-3xl bg-gradient-to-r from-blue-200 via-blue-200 to-blue-200"></div>
                 <div className="relative w-full h-full max-w-3xl flex items-center justify-center p-10">
                     {loginImages.map((image, index) => (
                         <img 

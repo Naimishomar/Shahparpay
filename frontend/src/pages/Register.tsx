@@ -86,7 +86,8 @@ const Register = () => {
     };
 
     return (
-        <div className="w-full h-screen overflow-hidden grid grid-cols-1 lg:grid-cols-12 bg-[#F6F7FA]">
+        <div className="relative w-full h-screen overflow-hidden grid grid-cols-1 lg:grid-cols-12 bg-white">
+            <div className="absolute bottom-0 left-0 w-96 h-96 rounded-2xl blur-3xl bg-gradient-to-r from-blue-200 via-blue-200 to-blue-200"></div>
             <div className="lg:col-span-7 flex flex-col justify-center items-center px-8 lg:px-12 relative h-full">
                 <div className="w-full max-w-2xl flex flex-col items-center pt-4">
                     <div className="mb-0 px-6 py-1">
@@ -266,7 +267,8 @@ const Register = () => {
                 </div>
             </div>
 
-            <div className="hidden lg:flex lg:col-span-5 relative bg-white items-center justify-center overflow-hidden">
+            <div className="relative hidden lg:flex lg:col-span-5 relative bg-white items-center justify-center overflow-hidden">
+                <div className="absolute top-0 right-0 w-96 h-96 rounded-2xl blur-3xl bg-gradient-to-r from-blue-200 via-blue-200 to-blue-200"></div>
                 <div className="relative w-full h-full max-w-xl flex items-center justify-center p-10">
                     {registerImages.map((image, index) => (
                         <img 
