@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Contact = () => {
     return (
         <div className="w-full min-h-screen pt-32 pb-20 px-5 relative overflow-hidden bg-gradient-to-b from-blue-100 via-blue-50 to-gray-100">

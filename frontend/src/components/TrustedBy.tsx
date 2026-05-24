@@ -1,5 +1,3 @@
-import React from 'react';
-
 const row1 = [
     { name: "RBI", sub: "RBI - PPI License", color: "text-amber-600" },
     { name: "BBPS", sub: "Bharat Bill Payment", color: "text-blue-600" },

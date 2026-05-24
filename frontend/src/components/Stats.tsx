@@ -1,5 +1,3 @@
-import React from 'react';
-
 const stats = [
     { value: "16.4L+", label: "Banking Agents" },
     { value: "2.56L", label: "Towns Covered" },
