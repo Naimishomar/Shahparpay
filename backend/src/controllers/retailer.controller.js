@@ -15,7 +15,7 @@ export const register = async(req,res)=>{
             return res.status(400).json({message: "Retailer already exists", success: false});
         }
         const hashedPassword = await bcrypt.hash(password, 10);
-        const retailerId = await `SP-${customAlphabet("1234567890", 7)()}`;
+        const retailerId = `SP-${customAlphabet("1234567890", 7)()}`;
         const newRetailer = await Retailers.create({
             retailerId,
             name,

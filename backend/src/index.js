@@ -23,7 +23,16 @@ app.get("/", (req, res) => {
     res.send("Hello World!");
 });
 
-app.listen(process.env.PORT || 3000, () => {
-    connectDB();
-    console.log("Server is running on port 3000");
-});
+const startServer = async () => {
+    try {
+        await connectDB();
+        app.listen(PORT, () => {
+            console.log(`Server running on port ${PORT}`);
+        });
+    } catch (error) {
+        console.log(error);
+        process.exit(1);
+    }
+};
+
+startServer();
